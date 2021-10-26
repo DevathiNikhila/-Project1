@@ -1,0 +1,20 @@
+<div id="t" class="testbox">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 mt-4">
+      <br>
+        <h3>Login</h3>
+        <form >
+            <div class="form-group">
+              <br>
+              <pre>
+                <label id="icon" for="loginUsername">Username</label><input type="text" name="login" #login="ngModel" [(ngModel)] ="name" placeholder="UserName"  required> <span class="help-block" *ngIf="login.invalid && login.touched">Username is required</span>
+                <!--<input type="text" name="login" #login="ngModel" placeholder="Enter Username"  required> <span class="help-block" *ngIf="login.invalid && login.touched">Username is required</span>
+                <label id="icon" for="loginUsername">Username</label><input type="text" name="login" class="form-control" #login="ngModel"  id="loginUsername" placeholder="Enter username" [(ngmodel)]="name" required>--></pre>
+            <pre><label id="icon" for="loginPassword">Password</label><input type="password" class="form-control" id="loginPassword" placeholder="Enter Password">
+                                <a [routerLink]="['/reset-password']">Forgot Password?</a>
+                  
+                    <button type="button" class="button" value="ad-page" (click)="onBackButtonClick();"><i class="fa fa-plus"></i>Login </button></pre>
+            </div>    
+          </form><br><br><br><br><br><br><br>     
+    </div>
+  </div>
